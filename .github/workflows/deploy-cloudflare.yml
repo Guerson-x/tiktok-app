@@ -16,3 +16,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: c5ab9cdc6cbd95b54977dd7303e78cf9
           command: pages deploy . --project-name=post-claude-code --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: c5ab9cdc6cbd95b54977dd7303e78cf9
